@@ -141,3 +141,5 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+docker run --rm -v "$PWD/public":/usr/share/nginx/html:ro -p 8000:80 nginx:alpine
+
